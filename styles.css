@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:orange;
+}
+.container{
+    
+    background: linear-gradient(135deg, #153677, 4e085f);
+
+}
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+.task-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+/* .task-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
