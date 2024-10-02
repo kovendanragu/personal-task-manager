@@ -12,27 +12,36 @@
 <body>
 
     <div class="container">
-<h1>Task manager</h1>
+        <h1>Task manager</h1>
 
-<div class="task-form">
-<h2>Add New Task</h2>
-        <form id="taskForm">
-            <!-- Task Name Input -->
-            <label for="task-name">Task Name:</label>
-            <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required><br><br>
+        <div class="task-form">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <!-- Task Name Input -->
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required><br><br>
 
-            <!-- Description Input -->
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" placeholder="Enter task description"></textarea><br><br>
+                <!-- Description Input -->
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter task description"></textarea><br><br>
 
-            <!-- Due Date Input -->
-            <label for="due-date">Due Date:</label>
-            <input type="date" id="due-date" name="due-date" required><br><br>
-            <input type="submit" value="Add Task">
-        </form>
+                <!-- Due Date Input -->
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date" required><br><br>
+
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div class="task-list">
+                <h2>Task List</h2>
+                <div id="tasks">
+                    <!-- Tasks will be displayed here -->
 
 
-    </div>
+                </div>
+            </div>
+
+        </div>
 
 </body>
 
