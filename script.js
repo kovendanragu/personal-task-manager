@@ -1,14 +1,15 @@
 const tasks = [];
 
-document.getElementById("task-form").addEventListener('submit', function(event) {
+document.getElementById("taskForm").addEventListener('submit', function(event) {
     event.preventDefault();
 
     // getting values
    const taskName = document.getElementById('task-name').value;
-   const taskDescription = document.getElementById('task-name').value;
-   const dueDate = document.getElementById('task-name').value;
+   const taskDescription = document.getElementById('description').value;
+   const dueDate = document.getElementById('due-date').value;
 
 /   //  task object
+
     const newTask = {
         name: taskName,
         description: taskDescription,
@@ -19,7 +20,7 @@ document.getElementById("task-form").addEventListener('submit', function(event) 
     tasks.push(newTask);
 
     //empty form inputs
-    document.getElementById('task-form').reset();
+    document.getElementById('taskForm').reset();
 
     displayTasks();
 });
@@ -33,12 +34,13 @@ displayTasks() {
    tasks.forEach((task, index) => {
     const taskItem = document.createElement('li');
     taskItem.innerHTML = `
-        <strong>${task.name}</strong> <br>
-        ${task.description} <br>
-        <small>Due Date: ${task.dueDate}</small> <br>
+        <strong>Name:${task.name} </strong><br>
+        Task Description:${task.description} <br>
+        Due Date: ${task.dueDate} <br>
         <button onclick="removeTask(${index})">Remove</button>
     `;
     taskList.appendChild(taskItem);
 });
 }
+
 
