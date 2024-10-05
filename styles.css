@@ -56,6 +56,7 @@ h1, h2 {
 
 .task-form button:hover {
     background-color: #218838;
+    padding-bottom: 20px;
 }
 
 .task-form input:focus{
@@ -65,18 +66,39 @@ h1, h2 {
     background-color:antiquewhite;
 }
 
-.task-list {
-    margin-top: 20px;
+
+
+.task-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1.5fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-top:20px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+.task-header {
+    font-weight: bold;
 }
 
-#tasks {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.task-container:hover {
+    background-color: #e0e0e0;
 }
 
 
+.task-container button{
+        background-color: #e0e0e0;
+}
 
+
+.custom-checkbox {
+    transform: scale(2); /* Scales the checkbox by 1.5 times */
+    margin-right: 10px;    /* Adds space between the checkbox and label */
+    cursor: pointer;       /* Changes the cursor to pointer on hover */
+}
 
 
 
