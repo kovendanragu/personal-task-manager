@@ -39,64 +39,8 @@
                 <div>Due Date</div>
                 <div>Remove</div>
             </div>
-
-            <!-- Task 1 -->
-            <div class="task-container">
-                <div>
-                    <input type="checkbox" id="checkbox-task3" name="task" class="custom-checkbox">
-                </div>
-                <div>Task 1</div>
-                <div>Design homepage layout</div>
-                <div>4.10.2024</div>
-                <div><button class="remove-btn" onclick="deleteTask('task1')">🗑️</button>
-                </div>
-            </div>
-
-            <!-- Task 2 -->
-            <div class="task-container">
-                <div>
-                    <input type="checkbox" id="checkbox-task3" name="task" class="custom-checkbox">
-                </div>
-                <div>Task 2</div>
-                <div>Fix bugs in login feature</div>
-                <div>6.10.2024</div>
-                <div><button class="remove-btn" onclick="deleteTask('task1')">🗑️</button>
-                </div>
-            </div>
-
-            <!-- Task 3 -->
-            <div class="task-container">
-                <div>
-                    <input type="checkbox" id="checkbox-task3" name="task" class="custom-checkbox">
-                </div>
-                <div>Task 3</div>
-                <div>Create unit tests for components</div>
-                <div>4.10.2024</div>
-                <div>
-                    <button class="remove-btn" onclick="deleteTask('task1')">🗑️</button>
-                </div>
-            </div>
-
+            <div id="display-task-item"></div>
         </div>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Due Date</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="task-list">
-                <!-- Task rows will be appended here -->
-            </tbody>
-        </table>
-    </div>
-
-
-
-    </div>
-
     </div>
     <script src="./script.js"></script>
 </body>
